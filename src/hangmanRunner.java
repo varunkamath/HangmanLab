@@ -153,6 +153,8 @@ public class hangmanRunner {
         		 }
         	 }
          }
-         System.out.println("\nYou win! The word was '" + wordSelected + "'!"); // if all letters are correctly guessed instead of a wordguess
+         if (partialWord.indexOf("*") == -1) {
+        	 System.out.println("\nYou win! The word was '" + wordSelected + "'!"); // if all letters are correctly guessed instead of a wordguess
+         }
 	}
 }
